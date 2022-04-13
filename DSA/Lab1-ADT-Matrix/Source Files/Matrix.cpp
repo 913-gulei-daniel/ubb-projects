@@ -115,7 +115,7 @@ void Matrix::resize() {
 
 TElem Matrix::modify(int i, int j, TElem e) {
     ///
-    /// Best Case (TElem e exists and is the first one in the matrix) = Theta(1)
+    /// Best Case (m(i,j) exists and is the first one in the matrix) = Theta(1)
     /// Worst Case (TElem e doesn't exist) = Theta(lines[i+1] - lines[i])
     /// Average Case = Theta(lines[i+1] - lines[i])
     /// Total: O(lines[i+1] - lines[i])
@@ -189,7 +189,6 @@ void Matrix::addElem(int start, int i, int j, TElem e) {
 
 }
 
-
 void Matrix::removeElem(int i, int j) {
     ///
     /// Complexity = Theta(size)
@@ -203,5 +202,19 @@ void Matrix::removeElem(int i, int j) {
 
     for(int index = i + 1; index <= this->noLines; ++index)
         this->lines[index]--;
+
+}
+
+void Matrix::setElemsOnCol(int col, TElem elem){
+    ///
+    /// Complexity = Complexity(modify) * noCols - constant
+    /// Total = O(lines[i+1] - lines[i])
+    ///
+
+    if(col < 0 || col > this->noCols)
+        throw exception();
+
+    for(int i = 0; i < this->noLines; i++)
+        modify(i, col, elem);
 
 }

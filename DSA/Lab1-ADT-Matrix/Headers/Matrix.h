@@ -48,7 +48,9 @@ public:
 	//throws exception if (i,j) is not a valid position in the Matrix
 	TElem modify(int i, int j, TElem e);
 
-
+    //sets all the values from col to the value elem
+    //throws an exception if col is not valid
+    void setElemsOnCol(int col, TElem elem);
 
 
 };
