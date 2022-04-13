@@ -16,7 +16,10 @@ SortedMultiMap::SortedMultiMap(Relation r) {
 
 void SortedMultiMap::add(TKey c, TValue v) {
     ///
-    /// Complexity = Theta(1)
+    /// Best Case (DLL is empty) = Theta(1)
+    /// Worst Case (Node gets added at the end of the DLL) = Theta(n)
+    /// Average Case = Theta(n)
+    /// Total = O(n) (where n is the size of the DLL)
     ///
 
     node* newNode = new node;
@@ -69,7 +72,10 @@ void SortedMultiMap::add(TKey c, TValue v) {
 
 vector <TValue> SortedMultiMap::search(TKey c) const {
     ///
-    /// Complexity = Theta(n) (where n is the size of the DLL)
+    /// Best Case (node is the head) = Theta(1)
+    /// Worst Case (key isn't in the DLL) = Theta(n)
+    /// Average Case = Theta(n)
+    /// Total =  O(n) (where n is the size of the DLL)
     ///
 
     node* current = this->head;
@@ -92,7 +98,10 @@ vector <TValue> SortedMultiMap::search(TKey c) const {
 
 bool SortedMultiMap::remove(TKey c, TValue v) {
     ///
-    /// Complexity = O(n)
+    /// Best Case (node is the head) = Theta(1)
+    /// Worst Case (node isn't in the DLL) = Theta(n)
+    /// Average Case = Theta(n)
+    /// Total =  O(n) (where n is the size of the DLL)
     ///
 
     TElem elem = std::make_pair(c, v);
@@ -160,6 +169,10 @@ bool SortedMultiMap::isEmpty() const {
 }
 
 SMMIterator SortedMultiMap::iterator() const {
+    ///
+    /// Complexity = Theta(1)
+    ///
+
     return SMMIterator(*this);
 
 }
