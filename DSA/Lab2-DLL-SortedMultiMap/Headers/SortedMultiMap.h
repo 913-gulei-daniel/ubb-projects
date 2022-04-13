@@ -53,6 +53,9 @@ class SortedMultiMap {
     // returns an iterator for the sorted multimap. The iterator will return the pairs as required by the relation (given to the constructor)
     SMMIterator iterator() const;
 
+    // returns a vector with all the keys from the sorted multimap
+    vector<TKey> keySet() const;
+
     // destructor
     ~SortedMultiMap();
 };

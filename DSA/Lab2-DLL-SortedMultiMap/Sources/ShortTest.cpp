@@ -4,6 +4,7 @@
 #include "SMMIterator.h"
 #include <exception>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -39,3 +40,19 @@ void testAll() {
     assert(smm.isEmpty());
 }
 
+void testExtra(){
+    cout<<"Starting extra test\n";
+    SortedMultiMap smm = SortedMultiMap(relation1);
+    smm.add(1, 2);
+    smm.add(2, 3);
+    smm.add(2, 2);
+    smm.add(3, 3);
+
+    vector<TKey> vec = smm.keySet();
+
+    assert(vec[0] == 1);
+    assert(vec[1] == 2);
+    assert(vec[2] == 3);
+    assert(vec.size() == 3);
+
+}

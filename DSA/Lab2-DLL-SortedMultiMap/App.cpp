@@ -4,6 +4,7 @@
 #include "ExtendedTest.h"
 
 int main(){
+    testExtra();
     testAll();
 	testAllExtended();
 

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <exception>
+#include <algorithm>
 
 using namespace std;
 
@@ -188,5 +189,32 @@ SortedMultiMap::~SortedMultiMap() {
         delete aux;
 
     }
+
+}
+
+vector<TKey> SortedMultiMap::keySet() const {
+    ///
+    /// Complexity find()
+    /// Best Case = Theta(1) (element is first in the vector)
+    /// Worst Case = Theta(m) (where m is the size of the vector)
+    /// Average Case = Theta(m)
+    /// Total = O(m)
+    ///
+    /// Complexity = O(n*m) (where n is the size of the DLL)
+    ///
+
+    vector<TKey> set;
+
+    node* current = this->head;
+
+    while(current != nullptr){
+        if(find(set.begin(), set.end(), current->val.first) == set.end())
+            set.push_back(current->val.first);
+
+        current = current->next;
+
+    }
+
+    return set;
 
 }
