@@ -1,3 +1,0 @@
-/mnt/d/GitHub/DSA/Lab1-ADT-Matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/d/GitHub/DSA/Lab1-ADT-Matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/d/GitHub/DSA/Lab1-ADT-Matrix/cmake-build-debug/CMakeFiles/Lab1_ADT_Matrix.dir

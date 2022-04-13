@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Lab1_ADT_Matrix.dir/Source_Files/App.cpp.o CMakeFiles/Lab1_ADT_Matrix.dir/Source_Files/ExtendedTest.cpp.o CMakeFiles/Lab1_ADT_Matrix.dir/Source_Files/Matrix.cpp.o CMakeFiles/Lab1_ADT_Matrix.dir/Source_Files/ShortTest.cpp.o  -o Lab1_ADT_Matrix 
