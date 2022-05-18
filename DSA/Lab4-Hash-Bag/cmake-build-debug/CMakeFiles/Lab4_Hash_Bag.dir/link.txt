@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lab4_Hash_Bag.dir/Sources/Bag.cpp.o CMakeFiles/Lab4_Hash_Bag.dir/Sources/BagIterator.cpp.o CMakeFiles/Lab4_Hash_Bag.dir/Sources/ExtendedTest.cpp.o CMakeFiles/Lab4_Hash_Bag.dir/Sources/ShortTest.cpp.o CMakeFiles/Lab4_Hash_Bag.dir/App.cpp.o  -o Lab4_Hash_Bag 

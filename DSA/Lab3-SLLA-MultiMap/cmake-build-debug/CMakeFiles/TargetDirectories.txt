@@ -1,0 +1,3 @@
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/cmake-build-debug/CMakeFiles/Lab3_SLLA_MultiMap.dir

@@ -276,17 +276,6 @@ def lowest_cost_walk(graph, start, end):
 
 
 def reconstruct_path(previous, distance, start, end):
-    """
-    Reconstructs the path with costs backwards using the previous matrix.
-    input:
-        - matrix previous
-        - matrix distance
-        - int startVertex
-        - int endVertex
-    output:
-        - a list containing the edges from the lowest cost walk and its costs
-    """
-
     path = [end]
 
     while end != start:

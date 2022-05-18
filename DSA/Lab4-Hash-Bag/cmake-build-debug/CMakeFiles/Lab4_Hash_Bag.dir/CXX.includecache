@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Headers/Bag.h
+utility
+-
+
+../Headers/BagIterator.h
+Bag.h
+../Headers/Bag.h
+
+/mnt/d/GitHub/ubb-projects/DSA/Lab4-Hash-Bag/Sources/Bag.cpp
+Bag.h
+/mnt/d/GitHub/ubb-projects/DSA/Lab4-Hash-Bag/Sources/Bag.h
+BagIterator.h
+/mnt/d/GitHub/ubb-projects/DSA/Lab4-Hash-Bag/Sources/BagIterator.h
+exception
+-
+iostream
+-
+

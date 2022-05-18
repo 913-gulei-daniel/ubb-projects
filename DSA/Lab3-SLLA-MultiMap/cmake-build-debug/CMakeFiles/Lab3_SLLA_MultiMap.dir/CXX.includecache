@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Headers/MultiMap.h
+vector
+-
+utility
+-
+
+../Headers/MultiMapIterator.h
+MultiMap.h
+../Headers/MultiMap.h
+
+../Headers/ShortTest.h
+
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/Sources/ExtendedTest.cpp
+ShortTest.h
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/Sources/ShortTest.h
+MultiMap.h
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/Sources/MultiMap.h
+MultiMapIterator.h
+/mnt/d/GitHub/ubb-projects/DSA/Lab3-SLLA-MultiMap/Sources/MultiMapIterator.h
+assert.h
+-
+iostream
+-
+stdlib.h
+-
+vector
+-
+exception
+-
+
